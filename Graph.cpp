@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Graph::Graph(int n) : numNodes(n), adjMatrix(n, std::vector<int>(n)) {}
+Graph::Graph(int n) : numNodes(n), adjMatrix(n, vector<int>(n)) {}
 
 void Graph::input() {
     cout << "Enter adjacency matrix (use 0 for no direct connection):\n";
