@@ -3,7 +3,7 @@
 ## Project Description
 This project is a terminal-based C++ application for optimizing drone delivery routes using graph algorithms. It allows users to input a network of delivery points as an adjacency matrix, and displays the resulting graph. The project is structured for easy extension to include advanced algorithms such as Minimum Spanning Tree (MST) and the Traveling Salesperson Problem (TSP).
 
-## Features
+## Current Features
 - Input the number of delivery points (nodes)
 - Input the adjacency matrix representing distances between points
 - Display the adjacency matrix for verification
