@@ -2,11 +2,19 @@
 #include "Graph.h"
 #include "MST.h"
 #include "TSP.h"
+#include <vector>
+#include <string>
 
 int main() {
     int n;
     std::cout << "Enter number of delivery points: ";
     std::cin >> n;
+    std::vector<std::string> labels(n);
+    std::cin.ignore(); // Clear newline after reading n
+    for (int i = 0; i < n; i++) {
+        std::cout << "Enter label for location " << i << ": ";
+        std::getline(std::cin, labels[i]);
+    }
     Graph g(n);
     g.input();
 
@@ -20,7 +28,7 @@ int main() {
         int choice;
         std::cin >> choice;
         if (choice == 1) {
-            g.display();
+            g.display(labels);
         } else if (choice == 2) {
             MSTSolver mst(g);
             mst.computeMST();
